@@ -26,9 +26,10 @@ When they are matched, say we were looking for the text "CREATE TABLE" and it ca
 
 What's more, when it finds itself in certain states, it know how to save certain matched information (for example, the table name) to some buffer variables, and when the instruction is verified as complete, it stores that information to the "permanent memory" of the program.
 
-The structure for the allowed commands is as follows:
+### Command structure
 
-For `CREATE TABLE`,
+#### `CREATE TABLE`:
+
 ```sql
 CREATE TABLE table_name (
     column_1 data_type column_constraint,
@@ -36,6 +37,46 @@ CREATE TABLE table_name (
     ...
     table_constraint
 );
+```
+
+#### `DROP TABLE`:
+
+```sql
+DROP TABLE table_name;
+```
+
+#### `INSERT INTO`:
+
+```sql
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+```
+
+or
+
+```sql
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+```
+
+#### `DESCRIBE`:
+
+```sql
+DESCRIBE table_name;
+```
+
+#### `ALTER TABLE`:
+
+```sql
+ALTER TABLE table_name
+ADD column_name datatype;
+```
+
+or
+
+```sql
+ALTER TABLE table_name
+DROP COLUMN column_name;
 ```
 
 ## 🎓 What did I learn?
