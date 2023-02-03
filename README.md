@@ -26,6 +26,18 @@ When they are matched, say we were looking for the text "CREATE TABLE" and it ca
 
 What's more, when it finds itself in certain states, it know how to save certain matched information (for example, the table name) to some buffer variables, and when the instruction is verified as complete, it stores that information to the "permanent memory" of the program.
 
+The structure for the allowed commands is as follows:
+
+For `CREATE TABLE`,
+```sql
+CREATE TABLE table_name (
+    column_1 data_type column_constraint,
+    column_2 data_type column_constraint,
+    ...
+    table_constraint
+);
+```
+
 ## 🎓 What did I learn?
 
 When I started to work on this project, the main problem I encountered was that both the documentation of Flex I could find on the Internet, as well as the documentation I received from my teacher, was very, very limited.
