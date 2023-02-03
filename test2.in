@@ -1,0 +1,10 @@
+CREATE TABLE employees
+( employee_id number(10) NOT NULL,
+  employee_name varchar2(50) NOT NULL,
+  city varchar2(50),
+  CONSTRAINT employees_pk PRIMARY KEY (employee_id)
+);
+INSERT INTO employees VALUES (1, "Gigel", "Bucuresti");
+DESCRIBE employees;
+ALTER TABLE employees ADD Age int;
+DESCRIBE employees;

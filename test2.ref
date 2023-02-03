@@ -1,0 +1,9 @@
+Table Name: employees
+Primary Key: employees_pk(employee_id)
+Number of columns: 3
+Number of records: 1
+
+Table Name: employees
+Primary Key: employees_pk(employee_id)
+Number of columns: 4
+Number of records: 1

@@ -1,0 +1,12 @@
+DROP TABLE employees
+CREATE TABLE employees
+( employee_id number(10) NOT NULL,
+  employee_name varchar2(50) NOT NULL,
+  city varchar2(50),
+  CONSTRAINT employees_pk PRIMARY KEY (employee_id)
+);
+DESCRIBE employees;
+DESCRIBE employees;
+DROP TABLE employees;
+DROP TABLE employees;
+DESCRIBE employees;
