@@ -1,0 +1,30 @@
+-- DESCRIBE Persons;
+CREATE TABLE Persons (
+  ID int NOT NULL PRIMARY KEY,
+  LastName varchar(255) NOT NULL
+);
+DESCRIBE Persons;
+ALTER TABLE Persons
+ADD FirstName varchar(255);
+ALTER TABLE Persons
+ADD Age int;
+DESCRIBE Persons;
+ALTER TABLE Persons
+DROP COLUMN LastName;
+DESCRIBE Persons;
+CREATE TABLE Students (
+  ID int NOT NULL,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Age int,
+  Grade int,
+  -- comentariu care nu trece,
+  PRIMARY KEY (ID)
+);
+DESCRIBE Students;
+CREATE TABLE Persons (
+  ID int NOT NULL PRIMARY KEY,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Age int
+);

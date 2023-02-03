@@ -1,0 +1,30 @@
+CREATE TABLE employees
+( employee_id number(10) NOT NULL,
+  employee_name varchar2(50) NOT NULL,
+  city varchar2(50),
+  CONSTRAINT employees_pk PRIMARY KEY (employee_id)
+);
+
+DESCRIBE employees;
+
+CREATE TABLE employees
+( employee_id number(10) NOT NULL,
+  employee_name varchar2(50) NOT NULL,
+  city varchar2(50)
+);
+CREATE TABLE Persons (
+  ID int NOT NULL PRIMARY KEY,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Age int
+);
+DESCRIBE Persons;
+CREATE TABLE Students (
+  ID int NOT NULL,
+  LastName varchar(255) NOT NULL,
+  FirstName varchar(255),
+  Age int,
+  Grade int,
+  PRIMARY KEY (ID)
+);
+DESCRIBE Students;
