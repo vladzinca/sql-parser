@@ -83,7 +83,7 @@ DROP COLUMN column_name;
 
 When I started to work on this project, the main problem I encountered was that both the documentation of Flex I could find on the Internet, as well as the documentation I received from my teacher, was very, very limited.
 
-This being the case, I spent a few hours just reinventing the wheel, trying to understand the basics of Flex, what states are and how I can use them to parse through complex text patterns.
+This being the case, I spent a few hours just reinventing the wheel, trying to understand the basics of Flex, what states really are and how I can use them to parse through complex text patterns.
 
 In the end, working with software for which there is limited documentation available was the most important lesson I got from this experience, and I am extremely enthusiastic to have done it.
 
