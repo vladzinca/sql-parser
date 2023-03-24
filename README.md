@@ -22,7 +22,7 @@ I received it as homework for my Formal Languages and Automata Theory class, and
 
 What the program does is that it basically parses through the given input and looks for matches to certain patterns of text.
 
-When they are matched, say we were looking for the text "CREATE TABLE" and it came up in the input, it uses something called "states" and switches to another state that looks for the continuation of said command, in this case the name of the table we want to create.
+When they are matched, say we were looking for the text "CREATE TABLE" and it came up in the input, it uses something called "states" and then switches to another state that looks for the continuation of said command, in this case the name of the table we want to create.
 
 What's more, when it finds itself in certain states, it know how to save certain matched information (for example, the table name) to some buffer variables, and when the instruction is verified as complete, it stores that information to the "permanent memory" of the program.
 
